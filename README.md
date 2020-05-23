@@ -5,6 +5,9 @@ This repo contains source code and data taken from a serverless process utilizin
 An example Athena query is in the query.sql file, and the results of the query is results.csv. 
 The data from yahoo finance for 10 stocks for May 14th, 2020, is in the finance_data folder. 
 
+## API Gateway URL for data collector lambda
+https://5ldvpwcbql.execute-api.us-east-1.amazonaws.com/default/data_collector
+
 ## Lambda Configuration and Kinesis Monitoring Screen
 
 ### Data Collector Lambda Configuration
