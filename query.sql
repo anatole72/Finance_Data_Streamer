@@ -1,4 +1,4 @@
-SELECT name,MAX(high) AS high,substr(ts,1,11) AS date,substr(ts,11,3) AS hour
+SELECT name,MAX(high) high,date(CAST(ts AS timestamp)) date,hour(CAST(ts AS timestamp))-4 hour
 FROM stream_stock_prices
-GROUP BY name,substr(ts,1,11),substr(ts,11,3)
+GROUP BY name,date(CAST(ts AS timestamp)),hour(cast(ts as timestamp))
 ORDER BY name,hour;
