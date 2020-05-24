@@ -2,7 +2,7 @@
 
 This repo contains source code and data taken from a serverless process utilizing AWS Lambda, Kinesis Firehose, S3, Glue, and AWS Athena. The proess began with using a lambda function (see data_collector.py for source) to collect finance data from Yahoo Finance, process it, and PUT into a Kinesis Firehose Stream. The stream has a lambda function that will transform it into a necessary format for Glue and streams records into an S3 Bucket. A Glue crawler is pointed to the target bucket, which will create a table, which can then be queried using Athena.
 
-An example Athena query is in the query.sql file, and the results of the query is results.csv.This query was for the highest hourly "high" per company. 
+An example Athena query is in the query.sql file, and the results of the query is results.csv. This query was for the highest hourly "high" per company. 
 
 The data from yahoo finance for 10 stocks from May 14th, 2020, is in the finance_data folder. 
 
