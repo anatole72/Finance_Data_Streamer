@@ -4,7 +4,7 @@ This repo contains source code and data taken from a serverless process utilizin
 
 An example Athena query is in the query.sql file, and the results of the query is results.csv. This query was for the highest hourly "high" per company. 
 
-The data from yahoo finance for 10 stocks from May 14th, 2020, is in the finance_data folder. 
+The data from yahoo finance for 10 stocks from May 14th, 2020 that was collected and placed into a firehose stream by the data_collector lambda, is in the finance_data folder. 
 
 The Analysis.ipynb file contains some visuals based on the results.csv
 
